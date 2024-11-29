@@ -125,14 +125,30 @@
             border: none;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 400px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+
         }
         .portfolio-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
         .portfolio-card img {
+            width: 100%; 
+            height: 180px; 
+            object-fit: cover; 
             border-radius: 10px 10px 0 0;
         }
+        .portfolio-card .card-body {
+            flex: 1; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between; 
+            text-align: center; 
+}
+
         .portfolio-card h5 {
             color: #ffffff;
         }
@@ -187,7 +203,8 @@
                             <li><a class="dropdown-item" href="project1.html">I211 Semester Project</a></li>
                             <li><a class="dropdown-item" href="project2.html">Cryptography Program</a></li>
                             <li><a class="dropdown-item" href="project3.html">Firewall Simulator</a></li>
-                            <li><a class="dropdown-item" href="project4.html">Portfolio Website</a></li>
+                            <li><a class="dropdown-item" href="project4.html">Network Scanner</a></li>
+                            <li><a class="dropdown-item" href="project5.html">Portfolio Website</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
@@ -211,8 +228,10 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hi, I'm John Hogan, a Junior at Indiana University pursuing Cybersecurity and Global Policy.
-            My portfolio highlights my journey through projects, academics, and professional experiences.
+            Hi, I'm John Hogan, a Junior at Indiana University pursuing a degree in Cybersecurity and Global Policy.
+            I'm dedicated to solving real world security security challenges and creating impactful solutions through 
+            technical and analytical methods. 
+            My portfolio reflects my growth through hands-on projects, technical skills, and gaining practical experiences.
         </p>
     </section>
 
@@ -226,7 +245,7 @@
                         <img src="Images/I211_proj.jpg" class="card-img-top" alt="I211 Project">
                         <div class="card-body">
                             <h5>I211 Semester Project</h5>
-                            <p>A full-stack inventory management system for Adventure Outfitters.</p>
+                            <p>Full-stack inventory management system for Adventure Outfitters.</p>
                             <a href="project1.html" class="btn">View Project</a>
                         </div>
                     </div>
@@ -236,7 +255,7 @@
                         <img src="Images/crypt.jpg" class="card-img-top" alt="Portfolio Website">
                         <div class="card-body">
                             <h5>Cryptography Program</h5>
-                            <p>A responsive and modern web design to showcase my work.</p>
+                            <p>Encryption and decryption program developed using Python, including AES, RSA, and SHA-256 hashing.</p>
                             <a href="project2.html" class="btn">View Project</a>
                         </div>
                     </div>
@@ -245,19 +264,39 @@
                     <div class="card portfolio-card">
                         <img src="Images/crypt.jpg" class="card-img-top" alt="Portfolio Website">
                         <div class="card-body">
-                            <h5>Cryptography Program</h5>
-                            <p>A responsive and modern web design to showcase my work.</p>
-                            <a href="project2.html" class="btn">View Project</a>
+                            <h5>Firewall Simulator</h5>
+                            <p>Python-based real-time firewall simulator with network traffic analysis, IP blocking, and malicious activity detection.</p>
+                            <a href="project3.html" class="btn">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card portfolio-card">
-                        <img src="Images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <img src="Images/placeholder.jpg" class="card-img-top" alt="Project 3">
                         <div class="card-body">
-                            <h5>Firewall Simulator</h5>
+                            <h5>Network Scanner</h5>
                             <p>Details of another exciting project go here.</p>
-                            <a href="project3.html" class="btn">View Project</a>
+                            <a href="project4.html" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="Images/portfolio_page.jpg" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5>Portfolio Website</h5>
+                            <p>Responsive and modern web design personally created through HTML and CSS to showcase my work.</p>
+                            <a href="project5.html" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="Images/placeholder.jpg" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5>Upcoming Project</h5>
+                            <p>Details of my next project to be updated upon completion.</p>
+                            <a href="upcoming.html" class="btn">View Project</a>
                         </div>
                     </div>
                 </div>
