@@ -152,50 +152,40 @@
     <section id="project-overview">
         <h2>Project Overview</h2>
         <p>
-            Encryption and decryption program developed using Python, including AES, RSA, and SHA-256 hashing. The program supports key generation, secure storage and retrieval of RSA keys, and interactive user input for encryption and decryption processes.
+            A modular firewall simulator developed in Python to manage and monitor network traffic.
+            The project evolved over a number of phases that progressively added functionality for filtering,
+            dynamic rule management and traffic analysis. The final program simulates a real world firewall system
+            that can be practically used in a personal environment to allow or block an IP based on the user defined whitelist and blacklist.
         </p>
     </section>
 
     <!-- Features -->
     <section id="project-features">
         <h2>Features</h2>
-        <h2>Symmetric Encryption with AES</h2>
+        <h2>Stage 1: Introductory Framework</h2>
     <ul>
-        <li>Allows users to encrypt and decrypt messages using AES in CBC mode.</li>
-        <li>Supports user-defined or program-generated AES keys and IVs.</li>
-        <li>Keys and IVs are managed in a secure base64 format.</li>
+        <li><b>IP Address Filtering:</b> Allow or blocklist based filtering of traffic.</li>
+        <li><b>Rule Initialization:</b> Includes hardcoded list of blocked IPs that serve as the rule set.</li>
+        <li><b>Static Configuration:</b> Rules cannot be dynamically updated; basic proof of concept implementation.</li>
+        <li><b>Function:</b> Serves as a starting point that establishes the basic logic that is expanded upon in subsequent stages.</li>
     </ul>
 
-    <h2>Asymmetric Encryption with RSA</h2>
+    <h2>Stage 2: Interactive Rule Management</h2>
     <ul>
-        <li>Generates, saves, and loads RSA public and private keys.</li>
-        <li>Provides encryption with public keys and decryption with private keys.</li>
-        <li>Supports user-specified private keys for decryption.</li>
+        <li><b>Dynamic Rule Updates:</b></li>
+        <li><b>Improved functionality:</b></li>
+        <li><b>Interactive Interface:</b></li>
+        <li><b>Function:</b></li>
     </ul>
 
-    <h2>Hashing with SHA-256</h2>
+    <h2>Stage 3: Advanced Monitoring and Analytics</h2>
     <ul>
-        <li>Computes and displays secure SHA-256 hashes of user-provided messages.</li>
-        <li>Demonstrates one-way hashing for data integrity verification.</li>
+        <li><b>Traffic Logging:</b></li>
+        <li><b>Audit Trails:</b></li>
+        <li><b>Analysis Tools:</b></li>
+        <li><b>Function:</b></li>
     </ul>
 
-    <h2>Key Management</h2>
-    <ul>
-        <li>RSA key pairs are saved to files (<code>private_key.pem</code> and <code>public_key.pem</code>) in PEM format for reuse.</li>
-        <li>AES keys and IVs are generated dynamically or provided by the user.</li>
-    </ul>
-
-    <h2>User Interaction</h2>
-    <ul>
-        <li>Menu-driven interface with intuitive prompts.</li>
-        <li>Allows users to switch between encryption methods and manage keys seamlessly.</li>
-    </ul>
-
-    <h2>Error Handling</h2>
-    <ul>
-        <li>Validates user-provided keys, IVs, and encrypted messages.</li>
-        <li>Displays meaningful error messages for decryption or key issues.</li>
-    </ul>
     </section>
 
     <!-- Gallery -->
